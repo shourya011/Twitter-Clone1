@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Twitter Clone</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" class="logo" alt="Twitter Logo">
+        <ul>
+            <li onclick="navigateTo('index.html')"><a href=index.html>🏠 Home</a></li>
+            <li onclick="navigateTo('explore.html')"><a href=explore.html>🔍 Explore</a></li>
+            <li class="active">🔔 Notifications</li>
+            <li onclick="navigateTo('profile.html')"><a href=profile.html>👤 Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Notifications</h2>
+        <div id="notifications-feed">
+            <!-- Notifications will be loaded dynamically -->
+        </div>
+    </div>
+
+    <script src="notification.js"></script>
+</body>
+</html>

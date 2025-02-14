@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Twitter Clone</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" class="logo" alt="Twitter Logo">
+        <ul>
+            <li onclick="navigateTo('index.html')"><a href=index.html>🏠 Home</a></li>
+            <li onclick="navigateTo('explore.html')"><a href=explore.html>🔍 Explore</a></li>
+            <li onclick="navigateTo('notifications.html')"><a href=notification.html>🔔 Notifications</a></li>
+            <li class="active">👤 Profile</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="profile-header">
+            <div class="cover-photo">
+                <img src="pic.jpeg" alt="Cover Photo">
+            </div>
+            <div class="profile-info">
+                <img src="pic.jpeg" class="profile-pic" alt="Profile Picture">
+                <h2 id="profile-name">Shourya Sharma</h2>
+                <p id="profile-bio">🚀 Tech Enthusiast | Developer | Coffee Addict</p>
+                <button onclick="editProfile()">Edit Profile</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <p><strong id="followers">1.2K</strong> Followers</p>
+            <p><strong id="following">540</strong> Following</p>
+        </div>
+
+        <h3>Tweets</h3>
+        <div id="tweet-feed">
+            <!-- User tweets will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

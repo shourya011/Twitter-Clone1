@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Twitter Clone</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" class="logo" alt="Twitter Logo">
+        <ul>
+            <li onclick="navigateTo('index.htm')"><a href=index.html>🏠 Home</a></li>
+            <li class="active">🔍 Explore</li>
+            <li onclick="navigateTo('notifications.html')"><a href=notification.html>🔔 Notifications</a></li>
+            <li onclick="navigateTo('profile.html')"><a href=profile.html>👤 Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Explore</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Twitter">
+            <button onclick="searchTweets()">🔍</button>
+        </div>
+
+        <div id="trending">
+            <h3>Trending Now</h3>
+            <ul id="trending-list">
+                <!-- Trending topics added dynamically -->
+            </ul>
+        </div>
+
+        <div id="tweets">
+            <h3>Trending Tweets</h3>
+            <div id="tweet-feed">
+                <!-- Tweets will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="explore.js"></script>
+</body>
+</html>

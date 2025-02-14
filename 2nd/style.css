@@ -1,0 +1,120 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    transition: background 0.2s;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Sections */
+.section {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Tweet Box */
+.tweet-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Tweet */
+.tweet {
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+button.like, button.retweet {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.sidebar ul li a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent (default text color) */
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+}

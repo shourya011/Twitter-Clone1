@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" class="logo" alt="Twitter Logo">
+        <ul>
+            <li onclick="showSection('home')"><a href=index.html></a>🏠 Home</li>
+            <li onclick="showSection('explore')"><a href=explore.html>🔍 Explore</a></li>
+            <li onclick="showSection('notifications')"><a href=notification.html>🔔 Notifications</a></li>
+            <li onclick="showSection('profile')"><a href=profile.html>👤 Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div id="home" class="section">
+            <h2>Home</h2>
+            <div class="tweet-box">
+                <textarea id="tweet-input" placeholder="What's happening?"></textarea>
+                <button onclick="postTweet()">Tweet</button>
+            </div>
+            <div id="feed"></div>
+        </div>
+
+        <div id="explore" class="section hidden">
+            <h2>Explore</h2>
+            <p>Trending topics...</p>
+        </div>
+
+        <div id="notifications" class="section hidden">
+            <h2>Notifications</h2>
+            <p>No new notifications</p>
+        </div>
+
+        <div id="profile" class="section hidden">
+            <h2>Your Profile</h2>
+            <p>@username</p>
+            <p>Bio goes here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
