@@ -16,6 +16,10 @@ function postTweet() {
 
     feed.prepend(tweet);
     document.getElementById("tweet-input").value = "";
+
+}
+function navigateTo(page) {
+    window.location.href = page;
 }
 
 // Function to handle likes
