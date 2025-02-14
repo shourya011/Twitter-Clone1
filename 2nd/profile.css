@@ -6,6 +6,10 @@ body {
     height: 100vh;
     background: #fff;
 }
+.main-content{
+    max-width: max-content;
+    margin: auto;
+}
 
 /* Sidebar */
 .sidebar {
