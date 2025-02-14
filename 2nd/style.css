@@ -1,4 +1,4 @@
-/* General Page Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     background: #fff;
 }
 
-/* Sidebar Styles */
+
 .sidebar {
     width: 250px;
     background: black;
@@ -48,7 +48,7 @@ body {
     overflow-y: auto;
 }
 
-/* Sections */
+
 .section {
     display: block;
 }
@@ -57,7 +57,7 @@ body {
     display: none;
 }
 
-/* Tweet Box */
+
 .tweet-box {
     display: flex;
     flex-direction: column;
@@ -84,12 +84,12 @@ button {
     border-radius: 5px;
 }
 
-/* Tweet */
+
 .tweet {
     background: #fff;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,16 +105,16 @@ button.like, button.retweet {
     cursor: pointer;
 }
 .sidebar ul li a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits color from parent (default text color) */
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar ul li {
     list-style: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 
 .sidebar ul li:hover {
-    background-color: #f0f0f0; /* Light hover effect */
+    background-color: #f0f0f0; 
 }
