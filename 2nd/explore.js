@@ -16,6 +16,7 @@ function loadTrendingTopics() {
         "#CryptoCrash",
         "#SpaceXLaunch",
         "#OpenAIUpdates",
+        "#Chatgpt vs Deepseek",
     ];
 
     let trendingList = document.getElementById("trending-list");
@@ -47,6 +48,7 @@ function loadTrendingTweets() {
             <div class="tweet-actions">
                 <button class="like" onclick="likeTweet(this)">❤️ 0</button>
                 <button class="retweet" onclick="retweet(this)">🔄 0</button>
+                <button id="repost" onclick="repost(this)">↳ ↰ 0</button>
             </div>
         `;
         tweetFeed.appendChild(tweetDiv);
@@ -78,4 +80,9 @@ function likeTweet(button) {
 function retweet(button) {
     let count = parseInt(button.innerText.split(" ")[1]);
     button.innerText = `🔄 ${count + 1}`;
+}
+
+function repost(button){
+    let count = parseInt(button.innertext.split(" ")[1]);
+    button.innerText = `↳ ↰ ${count + 1}`;
 }
