@@ -14,7 +14,7 @@ function loadNotifications() {
         { user: "NASA", action: "mentioned you in a tweet", avatar: "nasa.jpeg" },
         { user: "TechCrunch", action: "retweeted your post", avatar: "tc.png" },
         { user: "Bill Gates", action: "followed you", avatar: "bill.jpeg" },
-        { user: "OpenAI", action: "replied to your tweet", avatar: "Openai.png" },
+        { user: "OpenAI", action: "replied to your tweet", avatar: "openai.png" },
     ];
 
     let feed = document.getElementById("notifications-feed");
